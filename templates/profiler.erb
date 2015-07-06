@@ -1,0 +1,18 @@
+# Puppet Master Class
+class <%= @class_name %> {
+
+  class { '::r10k':
+    remote   => '<%= @control_repo %>',
+    provider => '<%= @gem_provider %>',
+  }
+<% if @mco -%>
+
+  include r10k::mcollective
+<% if @webhook -%>
+  class { '::r10k::webhook::config':
+    protected  => false,
+    notify     => Service['webhook'],
+  } 
+<% end -%>
+<% end -%>
+}

@@ -1,0 +1,14 @@
+{
+  "name": "a/profile_generator",
+  "version": "0.1.0",
+  "author": "WhatsARanjit",
+  "summary": null,
+  "license": "Apache 2.0",
+  "source": "https://github.com/WhatsARanjit/profile_generator",
+  "project_page": "https://github.com/WhatsARanjit/profile_generator",
+  "issues_url": "https://github.com/WhatsARanjit/profile_generator/issues",
+  "dependencies": [
+    {"name":"puppetlabs-stdlib","version_requirement":">= 1.0.0"}
+  ]
+}
+
